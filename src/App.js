@@ -1,24 +1,11 @@
-import {BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeScreen from "./screens/HomeScreen";
-import ContactScreen from "./screens/ContactScreen";
-import AboutScreen from "./screens/AboutScreen";
-import DetailedScreen from "./screens/DetailScreen";
-import Header from "./components/Header";
-
+import React from "react";
+import NavBar from "./NavBar";
 function App() {
-  return (
-    <BrowserRouter>
+  return(
     <div>
-    <Header />
-    <Routes>
-    <Route path="/" element={<HomeScreen />} />
-    <Route path="/contact" element={<ContactScreen />} />
-    <Route path="/about" element={<AboutScreen />} />
-    <Route path="/detail/:name" element={<DetailedScreen />} />
-    </Routes></div>
-    </BrowserRouter>
+<NavBar/>
+  </div>
   )
 }
-
 
 export default App;
